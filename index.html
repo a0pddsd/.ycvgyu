@@ -19,7 +19,7 @@
     <div class="container">
       <div class="row">
         <div class="main">
-          <div class="mainleft">
+          <div class="maintop">
             <h1 class="main-title text-start mt-2 mb-0">
               International Applicants
             </h1>
@@ -28,8 +28,8 @@
             </p>
           </div>
   
-          <form class="main-info-box d-flex">
-            <select class="info-select me-2" name="Selection_of_institutes" id="selectInstitutes">
+          <form class="main-info-box d-flex justify-content-between flex-wrap">
+            <select class="info-select" name="Selection_of_institutes" id="selectInstitutes">
               <option value="Princeton">
                 Princeton University
               </option>
@@ -151,9 +151,7 @@
                 University of Texas at Austin
               </option>
             </select>
-            <label for="points">
-              <input class="points" id="points" type="text" placeholder="Enter your points">
-            </label>
+              <input class="points" id="points" type="text" maxlength="3" minlength="1" placeholder="Enter your points">
             <button class="check-btn" id="check-btn">
               check my points
             </button>
