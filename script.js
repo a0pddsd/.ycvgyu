@@ -71,7 +71,7 @@ checkBtn.addEventListener("click", function () {
     outTitle.classList.add("out-fall-title");
     outTitle.innerHTML = "You Fail";
     outMessage.classList.add("out-fall-message");
-    outMessage.innerHTML = `You entered ${select} on a Fall with ${numbPoints} points`;
+    outMessage.innerHTML = `Unfortunately, you weren’t admitted to ${select} with ${numbPoints} points`;
     inputPoints.value = null;
   }
 // END MAIN FUNC
