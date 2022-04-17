@@ -31,7 +31,7 @@ checkBtn.addEventListener("click", function () {
     inputPoints.placeholder = "Enter Your Points";
     inputPoints.style.boxShadow = "1px 1px 3px 1px 	#70707033";
   }
-
+// START MAIN BASIC FEATURES
   outTitle.classList.add("d-none");
   outTitle.classList.remove("out-warning-title");
   outTitle.classList.remove("out-title");
@@ -43,6 +43,7 @@ checkBtn.addEventListener("click", function () {
   outMessage.classList.remove("out-fall-message");
   outTitle.innerHTML = "";
   outMessage.innerHTML = "";
+// END MAIN BASIC FEATURES
 // START MAIN FUNC
   if (numbPoints >= grantBall) {
     outTitle.classList.remove("d-none");
@@ -54,14 +55,14 @@ checkBtn.addEventListener("click", function () {
   else if (numbPoints >= kontraktBall && numbPoints < grantBall) {
     outTitle.classList.remove("d-none");
     outTitle.classList.add("out-warning-title");
-    outTitle.innerHTML = "Congratulations";
+    outTitle.innerHTML = "Excellent";
     outMessage.classList.add("out-warning-message");
     outMessage.innerHTML = `You entered ${select} on a Contract basis with ${numbPoints} points`;
   } 
   else if (numbPoints >= SupKontBall && numbPoints < kontraktBall && numbPoints >= failBall || numbPoints <= SupKontBall && numbPoints < kontraktBall && numbPoints >= failBall) {
     outTitle.classList.remove("d-none");
     outTitle.classList.add("out-fail-title");
-    outTitle.innerHTML = "Congratulations";
+    outTitle.innerHTML = "Can't Talk";
     outMessage.classList.add("out-fail-message");
     outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
   } 
