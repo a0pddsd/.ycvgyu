@@ -50,15 +50,11 @@ checkBtn.addEventListener("click", function () {
     outTitle.innerHTML = "Congratulations";
     outMessage.classList.add("out-warning-message");
     outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
+  } if (numbPoints <= failBall) {
+    outTitle.classList.remove("d-none");
+    outTitle.classList.add("out-fall-title");
+    outTitle.innerHTML = "You Fell";
+    outMessage.classList.add("out-fall-message");
+    outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
   }
-  // } else if (numbPoints <= failBall) {
-  //   outTitle.classList.remove("d-none");
-  //   outTitle.classList.add("out-fail-title");
-  //   outTitle.innerHTML = "Sorry";
-  //   outMessage.classList.add("out-fail-message");
-  //   outMessage.innerHTML = `You entered ${select} on a Fail basis with ${numbPoints} points`;
-  // }
-
-
-
 });
