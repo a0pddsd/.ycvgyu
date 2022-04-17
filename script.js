@@ -3,8 +3,8 @@ let checkBtn = document.querySelector("#check-btn");
 let outTitle = document.querySelector("#out-title");
 let outMessage = document.querySelector("#out__message");
 let inputPoints = document.querySelector("#points");
-let grantBall = 100;
-let kontraktBall = 75;
+let grantBall = 120;
+let kontraktBall = 80;
 let SupKontBall = grantBall / 2;
 let failBall = grantBall / 4;
 
@@ -50,25 +50,29 @@ checkBtn.addEventListener("click", function () {
     outTitle.innerHTML = "Congratulations";
     outMessage.classList.add("out-message");
     outMessage.innerHTML = `You entered ${select} on a Grant basis with ${numbPoints} points`;
-  } else if (numbPoints >= kontraktBall && numbPoints < grantBall) {
+  }
+  else if (numbPoints >= kontraktBall && numbPoints < grantBall) {
     outTitle.classList.remove("d-none");
     outTitle.classList.add("out-warning-title");
     outTitle.innerHTML = "Congratulations";
     outMessage.classList.add("out-warning-message");
     outMessage.innerHTML = `You entered ${select} on a Contract basis with ${numbPoints} points`;
-  } else if (numbPoints >= SupKontBall && numbPoints < kontraktBall) {
+  } 
+  else if (numbPoints >= SupKontBall && numbPoints < kontraktBall && numbPoints >= failBall || numbPoints <= SupKontBall && numbPoints < kontraktBall && numbPoints >= failBall) {
     outTitle.classList.remove("d-none");
     outTitle.classList.add("out-fail-title");
     outTitle.innerHTML = "Congratulations";
     outMessage.classList.add("out-fail-message");
     outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
-  } else if (numbPoints < SupKontBall) {
+  } 
+  else if (numbPoints < failBall) {
     outTitle.classList.remove("d-none");
     outTitle.classList.add("out-fall-title");
     outTitle.innerHTML = "You Fail";
     outMessage.classList.add("out-fall-message");
     outMessage.innerHTML = `You entered ${select} on a Fall with ${numbPoints} points`;
-  } else {
+  } 
+  else {
     outTitle.classList.add("d-none");
     outTitle.classList.remove("out-warning-title");
     outTitle.classList.remove("out-title");
