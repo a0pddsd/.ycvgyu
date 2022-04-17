@@ -71,19 +71,6 @@ checkBtn.addEventListener("click", function () {
     outTitle.innerHTML = "You Fail";
     outMessage.classList.add("out-fall-message");
     outMessage.innerHTML = `You entered ${select} on a Fall with ${numbPoints} points`;
-  } 
-  else {
-    outTitle.classList.add("d-none");
-    outTitle.classList.remove("out-warning-title");
-    outTitle.classList.remove("out-title");
-    outTitle.classList.remove("out-fail-title");
-    outTitle.classList.remove("out-fall-title");
-    outMessage.classList.remove("out-message");
-    outMessage.classList.remove("out-warning-message");
-    outMessage.classList.remove("out-fail-message");
-    outMessage.classList.remove("out-fall-message");
-    outTitle.innerHTML = "";
-    outMessage.innerHTML = "";
   }
 // END MAIN FUNC
 });
