@@ -274,11 +274,24 @@ body {
   .out-warning-title,
   .out-fail-title,
   .out-fall-title {
-    font-size: 20px;
+    margin-top: 14px;
+    font-size: 30px;
     color: #008C95;
-    margin-top: 13px;
+    font-weight: 700;
   }
-
+  
+  .out-warning-title {
+    color:#ffcc00;
+  }
+  
+  .out-fail-title {
+    color:#ff9966;
+  }
+  
+  .out-fall-title {
+    color:#ff6666;
+  }
+  
   .out-title::before,
   .out-warning-title::before,
   .out-fail-title::before,
@@ -286,12 +299,46 @@ body {
     content: "";
     position: absolute;
     background-image: url(./img/fireworks.png);
-    width: 37px;
-    height: 37px;
+    width: 40px;
+    height: 40px;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -50px;
-    margin-top: -1px;
+    margin-top: -5px;
+  }
+  
+  .out-warning-title::before {
+    background-image: url(./img/secret-svgrepo-com.svg);
+  }
+  
+  .out-fail-title::before {
+    background-image: url(./img/disappointed.png);
+  }
+  
+  .out-fall-title::before {
+    background-image: url(./img/fall.png);
+  }
+  
+  .out-message,
+  .out-warning-message,
+  .out-fail-message,
+  .out-fall-message {
+    font-size: 22px;
+    color: #008C95;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  
+  .out-warning-message {
+    color: #ffcc00;
+  }
+  
+  .out-fail-message {
+    color: 	#ff9966;
+  }
+  
+  .out-fall-message {
+    color: #ff6666;
   }
 }
 
