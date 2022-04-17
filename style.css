@@ -127,7 +127,8 @@ body {
 
 .out-title,
 .out-warning-title,
-.out-fail-title {
+.out-fail-title,
+.out-fall-title {
   margin-top: 30px;
   font-size: 30px;
   color: #008C95;
@@ -135,16 +136,21 @@ body {
 }
 
 .out-warning-title {
-  color: 		#ffcc00;
+  color:#ffcc00;
 }
 
 .out-fail-title {
-  color: 	#ff9966;
+  color:#ff9966;
+}
+
+.out-fall-title {
+  color:#ff6666;
 }
 
 .out-title::before,
 .out-warning-title::before,
-.out-fail-title::before {
+.out-fail-title::before,
+.out-fall-title::before {
   content: "";
   position: absolute;
   background-image: url(./img/fireworks.png);
@@ -164,9 +170,14 @@ body {
   background-image: url(./img/disappointed.png);
 }
 
+.out-fall-title::before {
+  background-image: url(./img/fall.png);
+}
+
 .out-message,
 .out-warning-message,
-.out-fail-message {
+.out-fail-message,
+.out-fall-message {
   font-size: 25px;
   color: #008C95;
   margin-top: 15px;
@@ -179,6 +190,10 @@ body {
 
 .out-fail-message {
   color: 	#ff9966;
+}
+
+.out-fall-message {
+  color: #ff6666;
 }
 
 @media (min-width: 2200px) {
