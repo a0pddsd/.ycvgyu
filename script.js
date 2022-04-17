@@ -32,6 +32,18 @@ checkBtn.addEventListener("click", function () {
     inputPoints.style.boxShadow = "1px 1px 3px 1px 	#70707033";
   }
 
+  outTitle.classList.add("d-none");
+  outTitle.classList.remove("out-warning-title");
+  outTitle.classList.remove("out-title");
+  outTitle.classList.remove("out-fail-title");
+  outTitle.classList.remove("out-fall-title");
+  outMessage.classList.remove("out-message");
+  outMessage.classList.remove("out-warning-message");
+  outMessage.classList.remove("out-fail-message");
+  outMessage.classList.remove("out-fall-message");
+  outTitle.innerHTML = "";
+  outMessage.innerHTML = "";
+// START MAIN FUNC
   if (numbPoints >= grantBall) {
     outTitle.classList.remove("d-none");
     outTitle.classList.add("out-title");
@@ -44,17 +56,45 @@ checkBtn.addEventListener("click", function () {
     outTitle.innerHTML = "Congratulations";
     outMessage.classList.add("out-warning-message");
     outMessage.innerHTML = `You entered ${select} on a Contract basis with ${numbPoints} points`;
-  } else if (numbPoints <= SupKontBall && numbPoints < kontraktBall) {
+  } else if (numbPoints >= SupKontBall && numbPoints < kontraktBall) {
     outTitle.classList.remove("d-none");
-    outTitle.classList.add("out-warning-title");
+    outTitle.classList.add("out-fail-title");
     outTitle.innerHTML = "Congratulations";
-    outMessage.classList.add("out-warning-message");
+    outMessage.classList.add("out-fail-message");
     outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
-  } if (numbPoints <= failBall) {
+  } else if (numbPoints < SupKontBall) {
     outTitle.classList.remove("d-none");
     outTitle.classList.add("out-fall-title");
-    outTitle.innerHTML = "You Fell";
+    outTitle.innerHTML = "You Fail";
     outMessage.classList.add("out-fall-message");
-    outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
+    outMessage.innerHTML = `You entered ${select} on a Fall with ${numbPoints} points`;
+  } else {
+    outTitle.classList.add("d-none");
+    outTitle.classList.remove("out-warning-title");
+    outTitle.classList.remove("out-title");
+    outTitle.classList.remove("out-fail-title");
+    outTitle.classList.remove("out-fall-title");
+    outMessage.classList.remove("out-message");
+    outMessage.classList.remove("out-warning-message");
+    outMessage.classList.remove("out-fail-message");
+    outMessage.classList.remove("out-fall-message");
+    outTitle.innerHTML = "";
+    outMessage.innerHTML = "";
   }
+// START MAIN FUNC
+
+  // else if (numbPoints <= SupKontBall && numbPoints < kontraktBall) {
+  //   outTitle.classList.remove("d-none");
+  //   outTitle.classList.remove("out-fall-title");
+  //   outTitle.classList.add("out-warning-title");
+  //   outTitle.innerHTML = "Congratulations";
+  //   outMessage.classList.add("out-warning-message");
+  //   outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
+  // } if (numbPoints <= failBall) {
+  //   outTitle.classList.remove("d-none");
+  //   outTitle.classList.add("out-fall-title");
+  //   outTitle.innerHTML = "You Fell";
+  //   outMessage.classList.add("out-fall-message");
+  //   outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
+  // }
 });
