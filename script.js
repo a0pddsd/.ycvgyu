@@ -81,20 +81,5 @@ checkBtn.addEventListener("click", function () {
     outTitle.innerHTML = "";
     outMessage.innerHTML = "";
   }
-// START MAIN FUNC
-
-  // else if (numbPoints <= SupKontBall && numbPoints < kontraktBall) {
-  //   outTitle.classList.remove("d-none");
-  //   outTitle.classList.remove("out-fall-title");
-  //   outTitle.classList.add("out-warning-title");
-  //   outTitle.innerHTML = "Congratulations";
-  //   outMessage.classList.add("out-warning-message");
-  //   outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
-  // } if (numbPoints <= failBall) {
-  //   outTitle.classList.remove("d-none");
-  //   outTitle.classList.add("out-fall-title");
-  //   outTitle.innerHTML = "You Fell";
-  //   outMessage.classList.add("out-fall-message");
-  //   outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
-  // }
+// END MAIN FUNC
 });
