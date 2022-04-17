@@ -103,7 +103,7 @@ body {
   box-shadow: 1px 1px 3px 1px #70707033;
   border-radius: 4px;
   font-size: 20px;
-  padding: 5px 5px;
+  padding: 4px 5px;
   color: #5e5e5e;
   margin-right: 30px;
 }
@@ -138,6 +138,10 @@ body {
   .main-bg {
     height: 400px;
   }
+
+  .check-btn {
+    margin-top: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -145,6 +149,7 @@ body {
     font-size: 25px;
     text-align: center !important;
   }
+
   .main-sub-title {
     font-size: 15px;
     line-height: 1.7;
@@ -156,6 +161,17 @@ body {
 
   .info-select {
     width: 100%;
+    margin-right: 0;
+  }
+
+  .points {
+    margin-top: 16px;
+    left: 0;
+  }
+
+  .check-btn {
+    margin-top: 16px;
+    margin-left: auto;
   }
 }
 
@@ -169,6 +185,16 @@ body {
   }
   .main-bg {
     height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .points {
+    width: 100%;
+  }
+
+  .check-btn {
+    width: 100%;
   }
 }
 
