@@ -24,12 +24,12 @@ checkBtn.addEventListener("click", function () {
 
   if (numbPoints == "" || numbPoints == null || isNaN(numbPoints)) {
     inputPoints.placeholder = "Enter Points";
-    inputPoints.style.boxShadow = "1px 1px 3px 1px 	#ff9966";
+    inputPoints.style.boxShadow = "1px 1px 3px 1px #ff9966";
     return;
   } else {
     outMessage.innerHTML = freeMessage;
     inputPoints.placeholder = "Enter Your Points";
-    inputPoints.style.boxShadow = "1px 1px 3px 1px 	#70707033";
+    inputPoints.style.boxShadow = "1px 1px 3px 1px #70707033";
   }
 // START MAIN BASIC FEATURES
   outTitle.classList.add("d-none");
