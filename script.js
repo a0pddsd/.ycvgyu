@@ -50,6 +50,7 @@ checkBtn.addEventListener("click", function () {
     outTitle.innerHTML = "Congratulations";
     outMessage.classList.add("out-warning-message");
     outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
+  }
   // } else if (numbPoints <= failBall) {
   //   outTitle.classList.remove("d-none");
   //   outTitle.classList.add("out-fail-title");
