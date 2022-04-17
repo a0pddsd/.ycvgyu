@@ -52,24 +52,21 @@ checkBtn.addEventListener("click", function () {
     outMessage.classList.add("out-message");
     outMessage.innerHTML = `You entered ${select} on a Grant basis with ${numbPoints} points`;
     inputPoints.value = null;
-  }
-  else if (numbPoints >= kontraktBall && numbPoints < grantBall) {
+  } else if (numbPoints >= kontraktBall && numbPoints < grantBall) {
     outTitle.classList.remove("d-none");
     outTitle.classList.add("out-warning-title");
     outTitle.innerHTML = "Excellent";
     outMessage.classList.add("out-warning-message");
     outMessage.innerHTML = `You entered ${select} on a Contract basis with ${numbPoints} points`;
     inputPoints.value = null;
-  } 
-  else if (numbPoints >= SupKontBall && numbPoints < kontraktBall && numbPoints >= failBall || numbPoints <= SupKontBall && numbPoints < kontraktBall && numbPoints >= failBall) {
+  } else if (numbPoints >= SupKontBall && numbPoints < kontraktBall && numbPoints >= failBall || numbPoints <= SupKontBall && numbPoints < kontraktBall && numbPoints >= failBall) {
     outTitle.classList.remove("d-none");
     outTitle.classList.add("out-fail-title");
     outTitle.innerHTML = "Can't Talk";
     outMessage.classList.add("out-fail-message");
     outMessage.innerHTML = `You entered ${select} on a Supper Contract with ${numbPoints} points`;
     inputPoints.value = null;
-  } 
-  else if (numbPoints < failBall) {
+  } else if (numbPoints < failBall) {
     outTitle.classList.remove("d-none");
     outTitle.classList.add("out-fall-title");
     outTitle.innerHTML = "You Fail";
