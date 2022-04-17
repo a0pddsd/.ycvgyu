@@ -126,6 +126,30 @@ body {
   transition: .2s ease;
 }
 
+@media (min-width: 2200px) {
+  .main-bg {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 3000px) {
+  .main-bg {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 5000px) {
+  .main-bg {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 991px) {
   .points {
     margin-right: 0;
@@ -141,6 +165,7 @@ body {
 
   .check-btn {
     margin-top: 16px;
+    padding: 4px 8px;
   }
 }
 
@@ -196,29 +221,5 @@ body {
   .check-btn {
     width: 100%;
     padding: 4px 0;
-  }
-}
-
-@media (min-width: 2200px) {
-  .main-bg {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 3000px) {
-  .main-bg {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 5000px) {
-  .main-bg {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
