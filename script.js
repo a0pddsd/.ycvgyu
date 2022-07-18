@@ -44,7 +44,7 @@ checkBtn.addEventListener("click", function () {
   outTitle.innerHTML = "";
   outMessage.innerHTML = "";
 // END MAIN BASIC FEATURES
-// START MAIN FUNC
+// START MAIN FUNCTION
   if (numbPoints >= grantBall) {
     outTitle.classList.remove("d-none");
     outTitle.classList.add("out-title");
